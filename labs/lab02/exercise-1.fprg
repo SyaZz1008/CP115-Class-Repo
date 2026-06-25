@@ -4,12 +4,19 @@
         <attribute name="name" value="exercise-1(wana)"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-25 02:57:35 PM"/>
+        <attribute name="saved" value="2026-06-25 03:41:44 PM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMjo1NToxMiBQTTsyNzUz"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMjo1NzozNSBQTTsxOzI4Njg="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzo0MTo0NCBQTTszOzI4NjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="ringgitAmount" type="Integer" array="False" size=""/>
+            <input variable="ringgitAmount"/>
+            <assign variable="remainingRinggit" expression="ringgitAmount - (ringgitAmount * 20/100)"/>
+            <assign variable="bathAmount" expression="remainingRinggit * exchangeRate"/>
+            <declare name="bahtAmount" type="Integer" array="False" size=""/>
+            <output expression="bahtAmount" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
