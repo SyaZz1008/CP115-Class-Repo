@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-4-1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-07 11:18:43 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNzsxMTowMjoxMiBBTTsyNzMx"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNzsxMToxODo0MyBBTTsxOzI4NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kwhConsumed" type="Integer" array="False" size=""/>
+            <input variable="kwhConsumed"/>
+            <declare name="usageCharges" type="Real" array="False" size=""/>
+            <if expression="kwhConsumed &gt; 200">
+                <then>
+                    <assign variable="usageCharges" expression="0.75"/>
+                </then>
+                <else>
+                    <if expression="kwhConsumed = 100">
+                        <then>
+                            <assign variable="usageCharges" expression="0.30"/>
+                        </then>
+                        <else>
+                            <assign variable="usageCharges" expression="0.50"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="totalBill" type="Real" array="False" size=""/>
+            <assign variable="totalBill" expression="kwhConsumed * usageCharges"/>
+            <output expression="totalBill" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
