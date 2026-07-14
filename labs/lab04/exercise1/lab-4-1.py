@@ -1,10 +1,9 @@
 kwhConsumed = int(input())
 if kwhConsumed > 200:
-    usageCharges = 0.75
+    totalBill = 100 * 0.3 + 100 * 0.5 + kwhConsumed - 200 * 0.75
 else:
-    if kwhConsumed == 100:
-        usageCharges = 0.3
+    if kwhConsumed <= 100:
+        totalBill = kwhConsumed * 0.3
     else:
-        usageCharges = 0.5
-totalBill = kwhConsumed * usageCharges
+        totalBill = 100 * 0.3 + kwhConsumed - 100 * 0.5
 print(totalBill)
