@@ -7,3 +7,4 @@
 # On Windows you may need:         py exercise.py
 #
 # Nothing in this file is marked, so experiment as much as you like.
+# Examples of valid identifiers and variables
