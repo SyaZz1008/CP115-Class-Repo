@@ -27,9 +27,6 @@ env/
 venv.bak/
 cp115_env/
 
-# My private notes
-labs/lab07/test.txt
-
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -67,3 +64,6 @@ Desktop.ini
 # Claude Code files
 CLAUDE.md
 .claude*
+
+# My private notes
+labs/lab07/test.txt
