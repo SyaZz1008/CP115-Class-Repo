@@ -27,6 +27,9 @@ env/
 venv.bak/
 cp115_env/
 
+# My private notes
+labs/lab07/test.txt
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
